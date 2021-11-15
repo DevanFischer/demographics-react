@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* success svg */
+@keyframes dash {
+  from {
+    fill: white;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    animation-fill-mode: backwards;
+    /* this is the color */
+    fill: #3dd616;
+  }
+}
+.path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash 1s linear forwards;
+}
+
+/* error svg */
+.cls-1 {
+  fill: #ff2400;
+}
+.cls-2 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
