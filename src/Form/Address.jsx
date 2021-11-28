@@ -13,28 +13,26 @@ import {
 } from '@material-ui/core';
 import classNames from 'classnames';
 
-const useStyles = makeStyles((theme) => {
-  return {
-    inputItem: {
-      width: '90%',
-      maxWidth: '30rem',
-      margin: '1rem',
-    },
+const useStyles = makeStyles((theme) => ({
+  inputItem: {
+    width: '90%',
+    maxWidth: '30rem',
+    margin: '1rem',
+  },
 
-    FormGroup: {
-      marginLeft: '2.3rem',
-    },
+  FormGroup: {
+    marginLeft: '2.3rem',
+  },
 
-    pagebutton: {
-      background: theme.palette.grey[300],
-      width: '10rem',
-      margin: '1rem',
-    },
-    noShippingInput: {
-      display: 'none',
-    },
-  };
-});
+  pagebutton: {
+    background: theme.palette.grey[300],
+    width: '10rem',
+    margin: '1rem',
+  },
+  noShippingInput: {
+    display: 'none',
+  },
+}));
 
 const PurpleCheckBox = withStyles({
   root: {
@@ -45,7 +43,7 @@ const PurpleCheckBox = withStyles({
   },
 })((props) => <Checkbox color="default" {...props} />);
 
-const Address = () => {
+const Address = function () {
   const { handleChange, values, step, setStep, setValues, shipping } =
     useContext(FormContext);
 
@@ -89,7 +87,7 @@ const Address = () => {
     setStep(step - 1);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = () => {
     const errors = addressValidation(values);
     setErrors(errors);
     if (Object.keys(errors).length > 0) return;
@@ -107,23 +105,25 @@ const Address = () => {
     setStep(step + 1);
   };
 
-  // const sendPostValues = () => {
-  //   const url = 'https://webhook.site/1fc1aed3-615d-434e-9717-1b2db79d536c';
+  // should be moved to <Address/> when address validation is created
+  const sendPostValues = () => {
+    const url = 'https://webhook.site/1fc1aed3-615d-434e-9717-1b2db79d536c';
 
-  //   fetch(url, {
-  //     method: 'POST',
-  //     body: JSON.stringify(values),
-  //   })
-  //     .then(function (data) {
-  //       //step 4 shows success page
-  //       setStep(4);
-  //       console.log('Request success: ', data);
-  //     })
-  //     .catch(function (error) {
-  //       // step 5 shows error page
-  //       setStep(5);
-  //     });
-  // };
+    fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(values),
+    })
+      .then(function (data) {
+        //step 4 shows success page
+        setStep(4);
+        console.log('Request success: ', data);
+      })
+      .catch(function () {
+        // step 5 shows error page
+        setStep(5);
+      });
+  };
+
   return (
     <div>
       <TextField

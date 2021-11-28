@@ -1,0 +1,66 @@
+{
+  "CaptureIehForm": false,
+  "DisclosureItems": [
+    {
+      "Sequence": 0,
+      "Type": "Text",
+      "PageNumber": 2,
+      "Message": "A complete and signed Lifeline Service Application and Certification (\"Certification\") is required to enroll you in StandUp Wireless' Lifeline service program in your state. This Certification is only for the purpose of verifying your eligibility for Lifeline service and will not be used for any other purpose. Service requests will not be processed until this Form has been received and verified by Company."
+    },
+    {
+      "Sequence": 1,
+      "Type": "Text",
+      "PageNumber": 2,
+      "Message": "Activation and usage requirement disclosures: I understand this service is a prepaid service, and I must personally activate the service. To keep my account active, I must use the service at least once during any 30-day period by completing an outbound call, sending at text message, using my mobile broadband connection (use data), purchasing additional service from the company, answering an in-bound call from someone other than StandUp Wireless, or by responding to a direct contact from StandUp Wireless confirming that I want to continue receiving Lifeline service from StandUp Wireless. If my service goes unused for 30 days, I will no longer be eligible for Lifeline benefits and my service will be suspended (allowing only 911 calls and calls to the StandUp Wireless's customer care center) subject to a 15-day cure period during which I may use the service (as described above) or contact StandUp Wireless to confirm I want to continue receiving Lifeline service."
+    },
+    {
+      "Sequence": 2,
+      "Type": "CheckBox",
+      "PageNumber": 2,
+      "Message": "I hereby certify that I have read and understood the disclosures listed above regarding activation and usage requirements."
+    },
+    {
+      "Sequence": 3,
+      "Type": "Text",
+      "PageNumber": 2,
+      "Message": "Authorizations:"
+    },
+    {
+      "Sequence": 4,
+      "Type": "CheckBox",
+      "PageNumber": 2,
+      "Message": "I understand I have the right to enroll in the Lifeline service using non-electronic methods. I further understand that I have the right to withdraw this consent at any time prior to activation of my service. The Company has advised me that I may request a paper copy of my contract and associated fees by calling 611 from my wireless handset."
+    },
+    {
+      "Sequence": 5,
+      "Type": "CheckBox",
+      "PageNumber": 2,
+      "Message": "I hereby authorize the Company to send me notifications, via text messages, emails, and phone calls (by automated telephone dialing system, manually, or with pre-recorded/artificial voice messages) regarding my Lifeline benefit, marketing messages, and promotional offers. I may withdraw my consent to receive some of these messages by dialing 611 from my Company provided wireless number. Opting out will not affect the Company's ability to contact me with messages regarding the Lifeline program and/or service functionality via the methods listed herein."
+    },
+    {
+      "Sequence": 6,
+      "Type": "CheckBox",
+      "PageNumber": 2,
+      "Message": "I acknowledge that I am providing the information I have included in this application to CGM, LLC and further authorize CGM, LLC to receive and use my information for enrollment verification and waste, fraud and abuse mitigation purposes. Additionally, I authorize CGM to receive and use my historic Lifeline enrollment information for enrollment verification and waste, fraud and abuse mitigation purposes."
+    },
+    {
+      "Sequence": 7,
+      "Type": "CheckBox",
+      "PageNumber": 2,
+      "Message": "I understand Lifeline benefits are limited to one per household. If I am found to already be receiving a Lifeline discount benefit from another Lifeline provider, I understand my current benefit will be transferred to StandUp Wireless. I consent to the transfer of my Lifeline discount benefit from my current Lifeline provider to StandUp Wireless."
+    },
+    {
+      "Sequence": 8,
+      "Type": "CheckBox",
+      "PageNumber": 2,
+      "Message": "I agree that my service provider can give the Lifeline Program administrator all of the information I am giving on this form. I understand that this information is meant to help run the Lifeline Program and that if I do not let them give it to the Administrator, I will not be able to get Lifeline benefits."
+    },
+    {
+      "Sequence": 9,
+      "Type": "CheckBox",
+      "PageNumber": 2,
+      "Message": "By checking this box, I hereby certify, under penalty of perjury, that the information included in this certification form is true and correct to the best of my knowledge."
+    }
+  ],
+  "Status": "Success"
+}
